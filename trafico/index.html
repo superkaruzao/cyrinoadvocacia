@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defesa Criminal Tráfico - João Cyrino</title>
+    <link rel="stylesheet" href="./assets/css/page/page.css">
+    <link rel="shortcut icon" href="imagens/faviconf.webp">
+    <script src="https://kit.fontawesome.com/62f6189027.js" crossorigin="anonymous"></script>
+    
+    <style>
+    
+        header {
+            background: url(imagens/man-5806011_1280.webp);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .button {
+            background: #DDAE40;
+            box-shadow: 0 0 10px #DDAE40;
+        }
+        
+        .container-left {
+            width: 100% !important;
+        }
+        
+        .title, .subtitle {
+            text-align: center;
+        }
+        
+        main #container1 .container .contents .content .subtitle {
+            text-align: left !important;
+        }
+        
+        main #container3 .container .contents .content {
+            align-content: space-between;
+            display: grid;
+        }
+        
+        .depoimento p.nome {
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 1em;
+        }
+        
+        #servicos {
+            padding: 4em 1em;
+        }
+        
+        #servicos .container {
+            display: grid;
+        }
+        
+        #servicos .container .title {
+            font-size: 1.75rem;
+        }
+        
+        #servicos .container .desc {
+            text-align: center;
+        }
+        
+        #servicos .container .subtitle b {
+            color: #fff;
+            display: inline-block;
+            background: #DDAE40;
+            padding: 0 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        #servicos .container .text {
+            text-align: center;
+        }
+        
+        header .container .container-left .logo {
+            display: grid;
+            width: 100%;
+        }
+        
+        header .container .container-left .logo img {
+            margin: 0 auto;
+            width: 200px;
+        }
+        
+        main #container1 .container .contents .content .favicon {
+            background-color: #DDAE40;
+        }
+        
+        main #container1 .container .contents .content {
+            border: 5px solid #000;
+        }
+        
+        main #container4 .container .faq div.title {
+            background-color: #DDAE40;
+        }
+        
+        /* Rodapé */
+        
+        footer .conteudo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 4em 1em;
+            width: 100%;
+        }
+        
+        footer .conteudo .lista .item {
+            margin-bottom: 0.5em;
+        }
+        
+        footer .conteudo .lista .item a {
+            align-items: center;
+            color: #000;
+            display: flex;
+            gap: 15px;
+            text-decoration: none;
+        }
+        
+        footer .conteudo .lista .item a i {
+            color: #DDAE40;
+            font-size: 1.2em;
+        }
+        
+        footer .conteudo .mapa iframe {
+            height: 250px;
+            width: 100%;
+        }
+        
+        footer .copyright {
+            background-color: #000;
+            display: grid;
+            justify-content: center;
+            padding: 1em;
+        }
+        
+        footer .copyright span {
+            color: #fff;
+            text-align: center;
+        }
+        
+        @media(max-width: 768px) {
+            
+            footer .conteudo {
+                grid-template-columns: 1fr;
+            }
+            
+            footer .esquerda {
+                margin-bottom: 2em;
+            }
+            
+        }
+        
+        /* Fundo cinza */
+        
+        .fundo-cinza {
+            background: #b1b1b3;
+            box-shadow: 0 0 10px #b1b1b3;
+            padding: 0rem 0 4rem 0;
+            border-radius: 1rem;
+            padding: 4em 1em;
+        }
+        
+        /* Certificações */
+        
+        .certificacoes {
+            padding: 4em 1em;
+        }
+        
+        .certificacoes .contents {
+        	 display: grid;
+        	 grid-template-columns: 1fr 1fr 1fr 1fr;
+        	 grid-gap: 10px;
+        	 margin-bottom: 2rem;
+        	 margin-top: 3rem;
+        }
+        
+        .certificacoes .contents .content {
+             align-content: center;
+        	 background: #fff;
+        	 display: grid;
+        	 padding: 1rem 2rem;
+        	 border-radius: 1rem;
+        	 position: relative;
+        	 border: 5px solid #DDAE40;
+        }
+        
+        .certificacoes .contents .content .favicon {
+        	width: 50px;
+        	height: 50px;
+        	background: #DDAE40;
+        	border-radius: 0.5rem;
+        	position: absolute;
+        	left: 2rem;
+        	top: 0;
+        	left: 50%;
+            transform: translate(-50%, -50%);
+        	display: grid;
+        	justify-content: center;
+        	align-items: center;
+        	border: 3px solid #DDAE40;
+        }
+        
+        .certificacoes .contents .content .favicon i {
+        	font-size: 1.5rem;
+        	color: #fff;
+        }
+        
+        .certificacoes .contents .content .subtitle {
+        	color: #000;
+        	font-weight: 700;
+        }
+        
+        .certificacoes .contents .content .text {
+        	color: #000;
+            margin-top: 1rem;
+        }
+        
+        @media(max-width: 768px) {
+            
+            .certificacoes .contents {
+        		 grid-template-columns: 1fr;
+        		 grid-gap: 50px 0;
+        	}
+        	
+        	.certificacoes .contents .content {
+        	    padding: 2em;
+        	}
+            
+        }
+                
+        /* Equipe */
+        
+        .equipe {
+            padding: 4em 1em;
+        }
+        
+        .equipe .caixa {
+            display: grid;
+            gap: 2em;
+        }
+        
+        .equipe .title {
+            font-size: 1.75rem;
+        }
+        
+        .equipe .content-persona {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .equipe .content-persona .content-persona-left {
+            width: 40%;
+            display: grid;
+        }
+        
+        .equipe .content-persona .content-persona-left img {
+            border: 5px solid #000;
+            border-radius: 1rem;
+            width: 100%;
+        }
+        
+        .equipe .content-persona .content-persona-right {
+            width: 55%;
+        }
+        
+        .equipe .content-persona .content-persona-right .title {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.5em;
+            text-align: left;
+        }
+        
+        .equipe .content-persona .content-persona-right .title strong {
+            font-size: 2.5rem;
+        }
+        
+        .equipe .content-persona .content-persona-right .text {
+            text-align: justify;
+        }
+        
+        @media(max-width: 768px) {
+            
+            .equipe .content-persona {
+                display: grid !important;
+            }
+            
+            .equipe .content-persona .content-persona-left, .equipe .content-persona .content-persona-right {
+                width: 100% !important;
+            }
+            
+            .equipe .content-persona .content-persona-left {
+                margin-bottom: 1.5em;
+                order: 1 !important;
+            }
+            
+            .equipe .content-persona .content-persona-right {
+                order: 2 !important;
+            }
+            
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    
+    <a id="whatsapp" href="">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <header>
+        <span></span>
+        <section class="container">
+            <article class="container-left" data-anime="top">      
+                <div class="logo">
+                    <img src="imagens/logopreta.webp" alt="">
+                </div>  
+
+                <h1 class="title">
+                    Defesa Criminal Especializada em Casos de Tráfico: Seus Direitos Resguardados!
+                </h1>
+
+                <p class="subtitle">
+                    O Cyrino Advocacia e Consultoria possui experiência e estratégia na defesa de acusados por crimes de tráfico, garantindo um julgamento justo e respeitando seus direitos.
+                </p>
+
+                <p class="subtitle">
+                    <b>10 anos de experiência, transparência total e atuação estratégica na defesa criminal.</b>
+                    <br>
+                    Atendimento humanizado, suporte jurídico especializado e compromisso com cada cliente.
+                </p>
+                
+                <a href="javascript:void(0);" class="button">
+                    Fale com um Advogado Especialista 
+                </a>
+            </article>
+        </section>
+    </header>
+
+    <main>
+        <div id="container1">
+            <section class="container">
+                <h2 class="title" data-anime="top" data-desk>
+                    Por que sua única opção é escolher o Cyrino Advocacia para sua defesa criminal?
+                </h2>
+
+                <h2 class="title" data-anime="top" data-cell style="text-align: center;">
+                    Por que sua única opção é escolher o Cyrino Advocacia para sua defesa criminal?
+                </h2>
+    
+                <article class="contents">
+                    <div class="content" data-anime="top">
+                        <div class="favicon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <p class="subtitle">
+                            Especialização na defesa de acusados por tráfico:
+                        </p>
+    
+                        <p class="text">
+                            Experiência consolidada em estratégias para reverter acusações, e garantir julgamentos justos.
+                        </p>
+                    </div>
+    
+                    <div class="content" data-anime="top">
+                        <div class="favicon">
+                            <i class="fa-solid fa-universal-access"></i>
+                        </div>
+
+                        <p class="subtitle">
+                            Atuação estratégica e embasada: 
+                        </p>
+    
+                        <p class="text">
+                            Avaliamos minuciosamente cada detalhe do processo, buscando falhas, nulidades e alternativas legais para  absolvição ou desclassificação do crime.
+                        </p>
+                    </div>
+    
+                    <div class="content" data-anime="top">
+                        <div class="favicon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <p class="subtitle">
+                             Transparência e ética:
+                        </p>
+    
+                        <p class="text">
+                             Nosso compromisso é oferecer um serviço jurídico claro e objetivo, para que você tenha total compreensão da sua situação.
+                        </p>
+                    </div>
+
+                    <div class="content" data-anime="top">
+                        <div class="favicon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <p class="subtitle">
+                            Plantão 24h para emergências: 
+                        </p>
+    
+                        <p class="text">
+                            Atendimento imediato para casos de prisões em flagrante e audiências de custódia.
+                        </p>
+                    </div>
+                </article>
+                
+                <a href="javascript:void(0);" class="button">
+                    Fale com um Advogado Especialista 
+                </a>
+
+            </section>
+        </div>
+
+        <!--<div id="container2">
+            <div class="container">
+                <p class="title" data-desk data-anime="top">
+                    Agende Sua Consulta Inicial Gratuita
+                </p>
+
+                <p class="title" data-cell data-anime="top">
+                    Agende Sua Consulta<br>Inicial Gratuita
+                </p>
+
+                <p class="text">
+                    Está enfrentando um problema trabalhista? Não espere mais. Agende uma consulta inicial gratuita com a Dra. Maria de Fátima e descubra como podemos ajudar você a alcançar a justiça que merece
+                </p>
+
+                <a href="https://wa.me/5511939607004?text=Gostaria%20de%20falar%20com%20um%20advogado" class="button">
+                    Agendar Minha Consulta
+                </a>
+            </div>
+        </div>-->
+
+        <div id="container3" style="background: #b1b1b3; border-radius: 1rem; box-shadow: 0 0 10px #b1b1b3;">
+            <div class="container">
+                <h3 class="title" data-desk data-anime="top">
+                    O Que Nossos Clientes Dizem
+                </h3>
+
+                <h3 class="title" data-cell data-anime="top">
+                    O Que Nossos<br>Clientes Dizem
+                </h3>
+
+                <article class="contents">
+                    <div class="content depoimento" data-anime="top">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+    
+                        <p class="text">
+                            "Minha família ficou desesperada quando fui preso injustamente. O advogado Cyrino nos orientou e conseguiu reverter minha prisão em tempo recorde. Fomos tratados com respeito e transparência o tempo todo."
+                        </p>
+                        
+                        <div class="baixo">
+                            <p class="nome">Carlos M.</p>
+                        </div>    
+                    </div>
+    
+                    <div class="content depoimento" data-anime="top">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+    
+                        <p class="text">
+                            "A equipe do Cyrino fez um trabalho impecável no caso do meu irmão. Me explicaram tudo com clareza e lutaram até o fim para garantir um julgamento justo pra ele. Recomendo de olhos fechados!
+                        </p>
+                        
+                        <div class="baixo">
+                            <p class="nome">Juliana R.</p>
+                        </div>    
+                    </div>
+    
+                    <div class="content depoimento" data-anime="top">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+    
+                        <p class="text" data-anime="top">
+                            "Ficar preso é desesperador, mas contar com um advogado que realmente se importa fez toda a diferença. O Cyrino analisou cada detalhe do meu processo e conseguiu uma estratégia que reduziu minha pena pela metade."
+                        </p>
+                        
+                        <div class="baixo">
+                            <p class="nome">Felipe S.</p>
+                        </div>    
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <!-- Certificações -->
+        <section class="certificacoes">
+            <div class="container">
+                <article class="contents">
+                    <div class="content animate" data-anime="top">
+                        <div class="favicon">
+                            <i class="fa-solid fa-medal" aria-hidden="true"></i>
+                        </div>
+
+                        <p class="subtitle">
+                            Certificação OAB
+                        </p>
+                    </div>
+    
+                    <div class="content animate" data-anime="top">
+                        <div class="favicon">
+                            <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+                        </div>
+
+                        <p class="subtitle">
+                            10 anos de atuação em Direito Penal
+                        </p>
+                    </div>
+    
+                    <div class="content animate" data-anime="top">
+                        <div class="favicon">
+                            <i class="fa-solid fa-map-pin" aria-hidden="true"></i>
+                        </div>
+
+                        <p class="subtitle">
+                            Sede em Campo Grande/MS
+                        </p>
+                    </div>
+
+                    <div class="content animate" data-anime="top">
+                        <div class="favicon">
+                            <i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>
+                        </div>
+
+                        <p class="subtitle">
+                            Atendimento 24h para emergências
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Serviços -->
+        <section class="container3 fundo-cinza" id="servicos">
+            <article class="container">
+                <h3 class="title" data-anime="top">
+                    Como Podemos Te Ajudar? 
+                </h3>
+                
+                <p class="subtitle ">
+                    Defendemos seus direitos com estratégia e compromisso. Atuamos em casos como:
+                </p>
+
+                <p class="subtitle">
+                    <b>Defesa em Casos de Tráfico de Drogas</b>
+                </p>
+
+                <p class="text">
+                    Atuação especializada para buscar absolvição, redução de pena ou desclassificação do crime.
+                </p>
+                
+                <p class="subtitle">
+                    <b>Habeas Corpus para Prisões por Tráfico</b>
+                </p>
+
+                <p class="text">
+                    Pedido de liberdade para prisões arbitrárias ou ilegais.
+                </p>
+                
+                <p class="subtitle">
+                    <b>Audiências de Custódia</b>
+                </p>
+                
+                <p class="text">
+                    Defesa imediata para evitar prisões desnecessárias e garantir seus direitos.
+                </p>
+                
+                <p class="subtitle">
+                    <b>Revisão Criminal</b>
+                </p>
+                
+                <p class="text">
+                    Avaliação de condenações para solicitar revisão de sentença ou progressão de regime.
+                </p>
+                
+                <p class="subtitle">
+                    <b>Acompanhamento em Delegacias e Presídios</b>
+                </p>
+                
+                <p class="text">
+                    Suporte jurídico completo desde a prisão até o julgamento.
+                </p>
+                
+                <p class="subtitle">
+                    <b>Recursos e Apelações</b>
+                </p>
+                
+                <p class="text">
+                    Elaboração de estratégias para recorrer de decisões desfavoráveis.
+                </p>
+
+                <p class="subtitle CTA">
+                    Além dos exemplos acima, atendemos todas as demandas relacionadas ao Direito Penal, com foco em qualidade e clareza para nossos clientes.
+                </p>
+
+                <a href="" class="button">
+                    Entre em Contato Agora 
+                </a>
+            </article>
+        </section>
+        
+        <!-- Equipe -->
+        <section class="equipe">
+            <div class="container">
+                <div class="caixa">
+                    <h3 class="title">
+                        Conheça Seu Advogado
+                    </h3>
+                    <div class="content-persona">
+                        <div class="content-persona-left">
+                            <img src="" alt="">
+                        </div>
+    
+                        <div class="content-persona-right">
+                            <p class="title">
+                                 Especialista em Direito Penal
+                                <br>
+                                <strong>Dr. João Cyrino</strong>
+                            </p>
+    
+                            <p class="text">
+                                Com 10 anos de atuação na advocacia criminal, o Dr. João Cyrino lidera uma equipe altamente qualificada, focada em defesa estratégica no Tribunal do Júri e demais processos penais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="container4" class="faq">
+            <div class="container">
+                <h5 class="title">
+                    Perguntas Frequentes
+                </h5>
+
+                <div class="faq perguntas">
+                    <div class="title active" >
+                        Como funciona o atendimento no Cyrino Advocacia?
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="resposta f2">
+                        Oferecemos atendimento presencial em nosso escritório em Campo Grande/MS e suporte online para clientes de outras localidades.
+                    <p>
+    
+                    <div class="title" >
+                        Vocês atendem emergências criminais?
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="resposta f2">
+                        Sim, contamos com plantão 24h para atender casos urgentes, como prisões em flagrante e audiências de custódia.
+                    <p>
+                        
+                    <div class="title" >
+                        Quais as chances de reduzir a pena ou conseguir a liberdade?
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="resposta f2">
+                        Cada caso é único, mas nossa equipe trabalha com todas as estratégias legais para garantir o melhor resultado possível.
+                    <p>    
+                    
+                    <div class="title" >
+                        O que devo fazer se um familiar for preso por tráfico?
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="resposta f2">
+                        Entre em contato imediatamente para que possamos agir com rapidez e garantir uma defesa eficiente desde o início.
+                    <p>    
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="container5">
+            <div class="container">
+                <p class="title" data-desk data-anime="top">
+                    Pronto para garantir seus Direitos?
+                </p>
+
+                <p class="title" data-cell data-anime="top">
+                    Pronto para garantir<br>seus Direitos?
+                </p>
+
+                <p class="subtitle">
+                    Entre em contato hoje mesmo e permita que nossa experiência trabalhe a seu favor. Não importa o quão complexo seja o seu caso, estamos prontos para lutar por você.
+                </p>
+
+                <a href="https://wa.me/5511939607004?text=Gostaria%20de%20falar%20com%20um%20advogado" class="button">
+                    Agendar Minha Consulta
+                </a>
+            </div>
+        </div>-->
+    </main>
+    
+    <footer>
+        <section class="container">
+            <div class="conteudo">
+                <div class="esquerda">
+                    <div class="lista">
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-phone"></i>
+                                
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-whatsapp"></i>
+                                
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-instagram"></i>
+                                
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-envelope"></i>
+                                
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-map-pin"></i>
+                                Rua Maranhão, 255, Vila Rica, Campo Grande/MS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="direita">
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.4966892327093!2d-54.59937519999999!3d-20.4447832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e886170239c9%3A0x458852ae9e78ca83!2sR.%20Maranh%C3%A3o%2C%20255%20-%20Vila%20Rica%2C%20Campo%20Grande%20-%20MS%2C%2079022-560!5e0!3m2!1spt-BR!2sbr!4v1739996006945!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <span>Direitos Autorais © 2025 Cyrino Advocacia e Consultoria. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+    <script src="./assets/js/scroll.js"></script>
+    <script>
+        const faqText = document.querySelectorAll(".faq .title");
+
+        function faq() {
+            if (this.classList.contains("active")) {
+                this.classList.remove("active");
+            } else {
+                faqText.forEach(item => {
+                    item.classList.remove("active");
+                });
+                this.classList.add("active");
+            }
+        }
+
+        faqText.forEach(item => {
+            item.addEventListener('click', faq)
+        });
+    </script>
+</body>
+</html>
